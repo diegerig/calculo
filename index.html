@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cálculo Fácil — Calculadoras rápidas para el día a día</title>
+<meta name="description" content="Calculadoras online gratis: IMC, propina, porcentajes y conversor de unidades. Rápidas, simples y sin registro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- ============================================================
+     GOOGLE ADSENSE: pegá aquí tu script de verificación de sitio
+     (te lo da adsense.google.com al agregar tu dominio/subdominio)
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+     ============================================================ -->
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">Cálculo<span class="mono">Fácil</span></a>
+    <nav class="site-nav">
+      <a href="index.html#herramientas">Herramientas</a>
+      <a href="about.html">Sobre nosotros</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="tick">SIN REGISTRO · SIN DESCARGAS</p>
+    <h1>Calculadoras rápidas para resolver cuentas del día a día</h1>
+    <p>IMC, propinas, porcentajes y conversión de unidades. Escribís el número, tenés el resultado. Nada más.</p>
+  </div>
+</section>
+
+<div class="ad-slot">
+  <div class="ad-inner">Espacio publicitario — bloque de anuncio AdSense</div>
+</div>
+
+<div class="wrap" id="herramientas">
+  <div class="tool-grid">
+
+    <!-- Calculadora de IMC -->
+    <div class="tool">
+      <div class="tool-head">
+        <h2>Calculadora de IMC</h2>
+        <span class="id mono">01</span>
+      </div>
+      <div class="tool-body">
+        <div class="field inline">
+          <div>
+            <label for="imc-peso">Peso (kg)</label>
+            <input type="number" id="imc-peso" placeholder="70" min="0" step="0.1">
+          </div>
+          <div>
+            <label for="imc-altura">Altura (cm)</label>
+            <input type="number" id="imc-altura" placeholder="170" min="0" step="0.1">
+          </div>
+        </div>
+        <div class="readout" id="imc-resultado">—<span class="hint" style="display:block;margin-top:6px;">Ingresá peso y altura</span></div>
+      </div>
+    </div>
+
+    <!-- Calculadora de propina -->
+    <div class="tool">
+      <div class="tool-head">
+        <h2>Calculadora de propina</h2>
+        <span class="id mono">02</span>
+      </div>
+      <div class="tool-body">
+        <div class="field">
+          <label for="tip-cuenta">Total de la cuenta</label>
+          <input type="number" id="tip-cuenta" placeholder="45.00" min="0" step="0.01">
+        </div>
+        <div class="field inline">
+          <div>
+            <label for="tip-porcentaje">Propina (%)</label>
+            <input type="number" id="tip-porcentaje" placeholder="10" min="0" step="1" value="10">
+          </div>
+          <div>
+            <label for="tip-personas">Dividir entre</label>
+            <input type="number" id="tip-personas" placeholder="1" min="1" step="1" value="1">
+          </div>
+        </div>
+        <div class="readout" id="tip-resultado">—<span class="hint" style="display:block;margin-top:6px;">Ingresá el total de la cuenta</span></div>
+      </div>
+    </div>
+
+    <!-- Calculadora de porcentajes -->
+    <div class="tool">
+      <div class="tool-head">
+        <h2>Calculadora de porcentajes</h2>
+        <span class="id mono">03</span>
+      </div>
+      <div class="tool-body">
+        <div class="field inline">
+          <div>
+            <label for="pct-valor">¿Cuánto es el</label>
+            <input type="number" id="pct-porcentaje" placeholder="20" min="0" step="0.1">
+          </div>
+          <div>
+            <label for="pct-total">% de</label>
+            <input type="number" id="pct-total" placeholder="150" min="0" step="0.01">
+          </div>
+        </div>
+        <div class="readout" id="pct-resultado">—<span class="hint" style="display:block;margin-top:6px;">Ingresá ambos valores</span></div>
+      </div>
+    </div>
+
+    <!-- Conversor de unidades -->
+    <div class="tool">
+      <div class="tool-head">
+        <h2>Conversor de unidades</h2>
+        <span class="id mono">04</span>
+      </div>
+      <div class="tool-body">
+        <div class="field">
+          <label for="conv-tipo">Tipo de conversión</label>
+          <select id="conv-tipo">
+            <option value="cm_in">Centímetros → Pulgadas</option>
+            <option value="in_cm">Pulgadas → Centímetros</option>
+            <option value="kg_lb">Kilogramos → Libras</option>
+            <option value="lb_kg">Libras → Kilogramos</option>
+            <option value="c_f">Celsius → Fahrenheit</option>
+            <option value="f_c">Fahrenheit → Celsius</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="conv-valor">Valor</label>
+          <input type="number" id="conv-valor" placeholder="0" step="0.01">
+        </div>
+        <div class="readout" id="conv-resultado">—<span class="hint" style="display:block;margin-top:6px;">Ingresá un valor</span></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="ad-slot">
+  <div class="ad-inner">Espacio publicitario — bloque de anuncio AdSense</div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>© 2026 Cálculo Fácil. Todos los derechos reservados.</div>
+    <nav>
+      <a href="about.html">Sobre nosotros</a>
+      <a href="privacy-policy.html">Política de privacidad</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+function num(el){ const v = parseFloat(el.value); return isNaN(v) ? null : v; }
+
+// IMC
+function calcularIMC(){
+  const peso = num(document.getElementById('imc-peso'));
+  const alturaCm = num(document.getElementById('imc-altura'));
+  const out = document.getElementById('imc-resultado');
+  if(peso === null || alturaCm === null || alturaCm <= 0){
+    out.innerHTML = '—<span class="hint" style="display:block;margin-top:6px;">Ingresá peso y altura</span>';
+    return;
+  }
+  const alturaM = alturaCm / 100;
+  const imc = peso / (alturaM * alturaM);
+  let categoria = '';
+  if(imc < 18.5) categoria = 'Bajo peso';
+  else if(imc < 25) categoria = 'Peso normal';
+  else if(imc < 30) categoria = 'Sobrepeso';
+  else categoria = 'Obesidad';
+  out.innerHTML = imc.toFixed(1) + '<span class="hint" style="display:block;margin-top:6px;">' + categoria + ' · Esto es orientativo, no reemplaza una evaluación médica</span>';
+}
+document.getElementById('imc-peso').addEventListener('input', calcularIMC);
+document.getElementById('imc-altura').addEventListener('input', calcularIMC);
+
+// Propina
+function calcularPropina(){
+  const cuenta = num(document.getElementById('tip-cuenta'));
+  const pct = num(document.getElementById('tip-porcentaje')) ?? 0;
+  const personas = num(document.getElementById('tip-personas')) || 1;
+  const out = document.getElementById('tip-resultado');
+  if(cuenta === null){
+    out.innerHTML = '—<span class="hint" style="display:block;margin-top:6px;">Ingresá el total de la cuenta</span>';
+    return;
+  }
+  const propina = cuenta * (pct/100);
+  const total = cuenta + propina;
+  const porPersona = total / personas;
+  out.innerHTML = porPersona.toFixed(2) + '<span class="unit">por persona</span><span class="hint" style="display:block;margin-top:6px;">Propina: ' + propina.toFixed(2) + ' · Total: ' + total.toFixed(2) + '</span>';
+}
+['tip-cuenta','tip-porcentaje','tip-personas'].forEach(id => document.getElementById(id).addEventListener('input', calcularPropina));
+
+// Porcentaje
+function calcularPorcentaje(){
+  const pct = num(document.getElementById('pct-porcentaje'));
+  const total = num(document.getElementById('pct-total'));
+  const out = document.getElementById('pct-resultado');
+  if(pct === null || total === null){
+    out.innerHTML = '—<span class="hint" style="display:block;margin-top:6px;">Ingresá ambos valores</span>';
+    return;
+  }
+  const resultado = total * (pct/100);
+  out.innerHTML = resultado.toFixed(2) + '<span class="hint" style="display:block;margin-top:6px;">' + pct + '% de ' + total + '</span>';
+}
+['pct-porcentaje','pct-total'].forEach(id => document.getElementById(id).addEventListener('input', calcularPorcentaje));
+
+// Conversor
+function calcularConversion(){
+  const tipo = document.getElementById('conv-tipo').value;
+  const valor = num(document.getElementById('conv-valor'));
+  const out = document.getElementById('conv-resultado');
+  if(valor === null){
+    out.innerHTML = '—<span class="hint" style="display:block;margin-top:6px;">Ingresá un valor</span>';
+    return;
+  }
+  let resultado, unidad;
+  switch(tipo){
+    case 'cm_in': resultado = valor / 2.54; unidad = 'in'; break;
+    case 'in_cm': resultado = valor * 2.54; unidad = 'cm'; break;
+    case 'kg_lb': resultado = valor * 2.20462; unidad = 'lb'; break;
+    case 'lb_kg': resultado = valor / 2.20462; unidad = 'kg'; break;
+    case 'c_f': resultado = (valor * 9/5) + 32; unidad = '°F'; break;
+    case 'f_c': resultado = (valor - 32) * 5/9; unidad = '°C'; break;
+  }
+  out.innerHTML = resultado.toFixed(2) + '<span class="unit">' + unidad + '</span>';
+}
+document.getElementById('conv-valor').addEventListener('input', calcularConversion);
+document.getElementById('conv-tipo').addEventListener('change', calcularConversion);
+</script>
+
+</body>
+</html>
